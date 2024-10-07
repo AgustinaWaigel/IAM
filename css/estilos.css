@@ -1,0 +1,325 @@
+/* Restablecer márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+/* Encabezado principal */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh !important;
+    background: url(../img/todojuntos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #de3ccd;
+    color: #ffffff;
+    text-decoration: none;
+    background: #e03cec;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #ffefef;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #000000;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.box-container .box a {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    color: #820b78;
+    font-size: 20px;
+}
+
+.about {
+    background: #171717;
+}
+
+.price {
+    background: url(../img/todojuntos.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 80px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+/* Media queries para responsividad */
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+}
+
+/* Para pantallas medianas */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .header {
+        height: 50vh;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .box-container .box {
+        height: 10rem;
+        width: 15rem;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box-container .box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/* Para dispositivos móviles muy pequeños */
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .header {
+        height: 40vh;
+        background-size: contain;
+    }
+
+    .btn {
+        padding: 8px 30px;
+    }
+
+    .box-container .box {
+        height: 8rem;
+        width: 14rem;
+    }
+
+    .box-container .box h3 {
+        font-size: 16px;
+    }
+    
+    footer {
+        background-color: #222;
+        color: #fff;
+        padding: 40px 20px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin: 20px;
+    }
+    
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #444;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .social-media a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    
+    .social-media a:hover {
+        color: #e03cec;
+    }
+    
+    .footer-bottom p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    /* Responsivo */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .footer-section {
+            margin: 10px 0;
+        }
+    }
+    
+}
